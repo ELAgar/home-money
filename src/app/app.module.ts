@@ -11,6 +11,7 @@ import {AppComponent} from './app.component';
 
 // Services
 import {UsersService} from './shared/services/users.service';
+import {AuthService} from './shared/services/auth.service';
 
 
 @NgModule({
@@ -23,7 +24,10 @@ import {UsersService} from './shared/services/users.service';
     AuthModule,
     AppRoutingModule
   ],
-  providers: [UsersService],
+  providers: [
+    UsersService,
+    AuthService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
