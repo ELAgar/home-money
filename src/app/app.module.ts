@@ -3,6 +3,7 @@ import {NgModule} from '@angular/core';
 
 // Our modules
 import {AuthModule} from './auth/auth.module';
+import {AppRoutingModule} from './app-routing.module';
 
 // Components
 import {AppComponent} from './app.component';
@@ -14,7 +15,8 @@ import {AppComponent} from './app.component';
   ],
   imports: [
     BrowserModule,
-    AuthModule
+    AuthModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
