@@ -1,5 +1,6 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
+import {HttpModule} from '@angular/http';
 
 // Our modules
 import {AuthModule} from './auth/auth.module';
@@ -15,6 +16,7 @@ import {AppComponent} from './app.component';
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     AuthModule,
     AppRoutingModule
   ],
